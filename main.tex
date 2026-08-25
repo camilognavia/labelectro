@@ -1,0 +1,71 @@
+\documentclass{replab}
+\usepackage{lipsum}
+\usepackage{float,physics,setspace,caption,placeins}
+\captionsetup[table]{position=bottom}
+% Para colocar pie de tabla es necesario colocar primero el tabular y luego el caption dentro del entorno table.
+
+\onehalfspacing
+
+% --- Informaci\'on del documento ---
+\title{Pr\'actica #PRACTICA}
+
+% Nota: Para escribir los nombres de los autores, en el documento replab.cls dentro de la sección "Página de Título" cambiar los valores de nombres y correos dentro de la tabla.
+
+\date{FECHA ENTREGA}
+\subtitle={NOMBRE PRÁCTICA}
+\subject={Laboratorio de Óptica}
+
+\setlength{\columnsep}{14pt}
+
+% --- Archivo de bibliograf\'ia ---
+\addbibresource{repbib.bib}
+
+% --- Inicio del documento ---
+\begin{document}
+	
+	\pagestyle{fancy}
+	
+% --- T\'itulo ---
+		\begin{center}
+			\maketitle
+			
+			{\begin{tcolorbox}[colframe=white, colback=principaldos, arc=8pt]
+				\begin{onecolabstract}
+                    \vspace{-0.5cm}					
+					\medskip
+                    
+                    \noindent\textit{Palabras clave: }
+				\end{onecolabstract}
+
+				\tcblower
+
+				\selectlanguage{english}
+				\begin{onecolabstract}
+                    \vspace{-0.5cm}						
+					\medskip
+                    
+					\noindent\textit{Keywords: }
+				\end{onecolabstract}
+			\end{tcolorbox}}
+
+			\smallskip
+		\end{center}
+
+	\saythanks
+
+	\selectlanguage{spanish}
+	
+% --- Cuerpo del reporte ---
+	
+	\section{Introducci\'on}       
+        
+    \section{Metodología Experimental}
+
+    \section{Resultados y Discusión}
+        
+	\section{Conclusiones}
+        
+\printbibliography[heading=bibintoc]
+
+		
+\end{document}

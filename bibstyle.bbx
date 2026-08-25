@@ -1,0 +1,69 @@
+\ProvidesFile{bibstyle.bbx}
+[06/01/2026]
+
+\RequireBibliographyStyle{numeric}
+  \DeclareFieldFormat{note}{NOTA: #1}
+  \DeclareFieldFormat{url}{\url{#1}}
+  \DeclareDelimFormat{finalnamedelim}{\addcomma\addspace}
+  \DeclareDelimFormat{multinamedelim}{\addcomma\addspace}
+  \DeclareDelimFormat{revsdnamedelim}{\addcomma\addspace}
+  \DeclareFieldFormat{title}{\textnormal{#1}}
+  \DeclareFieldFormat{journaltitle}{\textnormal{#1}}
+  \DeclareFieldFormat[article]{title}{#1}
+  \DeclareBibliographyDriver{online}{%
+    \usebibmacro{bibindex}%
+    \usebibmacro{begentry}%
+    \renewcommand*{\newunitpunct}{\addcomma\addspace}
+    \printlist{organization}%
+    \newunit\newblock
+    \printfield{url}%
+    \newunit\newblock
+    \printtext{consultado el }\usebibmacro{date}%
+    \setunit{\adddot\addspace}\newblock
+    \printfield{note}%
+    \newunit\newblock
+    \usebibmacro{finentry}}
+  \DeclareBibliographyDriver{book}{%
+    \usebibmacro{bibindex}%
+    \usebibmacro{begentry}%
+    \renewcommand*{\newunitpunct}{\addcomma\addspace}
+    \selectlanguage{english}
+    \usebibmacro{author}%
+    \setunit{\adddot\addspace}\newblock
+    \selectlanguage{spanish}
+    \usebibmacro{title}%
+    \newunit\newblock
+    \printfield{volume}%
+    \newunit\newblock
+    \printlist{publisher}%
+    \newunit\newblock
+    \printfield{edition}%
+    \newunit\newblock
+    \printfield{year}%
+    \setunit{\adddot\addspace}\newblock
+    \printfield{note}%
+    \newunit\newblock
+    \usebibmacro{finentry}}
+  \DeclareBibliographyDriver{article}{%
+    \usebibmacro{bibindex}%
+    \usebibmacro{begentry}%
+    \renewcommand*{\newunitpunct}{\addcomma\addspace}
+    \selectlanguage{english}
+    \usebibmacro{author}%
+    \setunit{\adddot\addspace}\newblock
+    \selectlanguage{spanish}
+    \usebibmacro{title}%
+    \setunit{\adddot\addspace}\newblock
+    \printfield{journaltitle}%
+    \setunit{\addspace}\newblock
+    \printfield{volume}
+    \newunit\newblock
+    \printfield{number}
+    \setunit{\addspace}\newblock
+    \printtext{(}\printfield{year}\printtext{)}
+    \setunit{\adddot\addspace}\newblock
+    \printfield{note}%
+    \newunit\newblock
+    \usebibmacro{finentry}}
+
+\endinput
