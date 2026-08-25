@@ -1,7 +1,5 @@
-% Este template fue originalmente diseñado para emplearse en los diferentes cursos de laboratorio en la Facultad de Ciencias de la UNAM. El template incluye un archivo de bibliografía .bib que contiene la información de ciertos libros de referencia. Aunque esta plantilla está equipada con todos los paquetes y funciones que al autor le parecieron pertinentes, se le extiende la invitación al usuario de personalizar y mejorar cualquier aspecto que le parezca necesario. Cualquier comentario o sugerencia de mejora será bienvenida en el correo del autor: axelpadilla@ciencias.unam.mx
-
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{replab}[2022/12/20 v1.0]
+\ProvidesClass{replab}[2026/08/25 labelectro]
 
 % --- Configuración básica ---
 
