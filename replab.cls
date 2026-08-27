@@ -156,10 +156,10 @@
     
     % --- Opción para dos autores ---
     
-            % \begin{tabular}{c@{\hspace{3em}}c}
+            % \resizebox{\textwidth}{!}{\begin{tabular}{c@{\hspace{3em}}c}
             %     Nombre del autor 1\thanks{Información adicional del primer autor.} & Nombre del autor 2\thanks{Información adicional del segundo autor.} \\ 
             %     \href{mailto:emailautor1@email.com}{\footnotesize\color{principaluno}\texttt{emailautor1@email.com}} & \href{mailto:emailautor2@email.com}{\footnotesize\color{principaluno}\texttt{emailautor2@email.com}}
-            % \end{tabular}
+            % \end{tabular}}
     
     % --- Opción para tres autores ---
 
@@ -170,12 +170,12 @@
     
     % --- Opción para cuatro autores ---
 
-            % \begin{tabular}{c@{\hspace{3em}}c}
+            % \resizebox{\textwidth}{!}{\begin{tabular}{c@{\hspace{3em}}c}
             %     Nombre del autor 1\thanks{Información adicional del primer autor.} & Nombre del autor 2\thanks{Información adicional del segundo autor.} \\ 
             %     \href{mailto:emailautor1@email.com}{\footnotesize\color{principaluno}\texttt{emailautor1@email.com}} & \href{mailto:emailautor2@email.com}{\footnotesize\color{principaluno}\texttt{emailautor2@email.com}} \\[10pt]
             %     Nombre del autor 3\thanks{Información adicional del tercer autor.} & Nombre del autor 4\thanks{Información adicional del cuarto autor.} \\
             %     \href{mailto:emailautor3@email.com}{\footnotesize\color{principaluno}\texttt{emailautor3@email.com}} & \href{mailto:emailautor4@email.com}{\footnotesize\color{principaluno}\texttt{emailautor4@email.com}}
-            % \end{tabular}
+            % \end{tabular}}
     
     		\medskip
 
