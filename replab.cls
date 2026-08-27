@@ -58,7 +58,7 @@
 \contourlength{1pt}
 
 % Directorios de gráficos
-\graphicspath{{imágenes/}{escudos/}}
+\graphicspath{{imagenes/}{escudos/}}
 
 % Todos los enlaces del documento en negro
 \hypersetup{allcolors=black}
