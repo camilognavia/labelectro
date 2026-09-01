@@ -60,7 +60,7 @@
     \newunit\newblock
     \printfield{number}
     \setunit{\addspace}\newblock
-    \printtext{(}\printfield{year}\printtext{)}
+    \iffieldundef{year}{}{\printtext{(}\printfield{year}\printtext{)}}
     \setunit{\adddot\addspace}\newblock
     \printfield{note}%
     \newunit\newblock
